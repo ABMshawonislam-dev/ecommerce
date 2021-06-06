@@ -1,0 +1,13 @@
+.product-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.product-name{
+    background: #000;
+    padding: 60px;
+    box-sizing: border-box;
+    color: #fff;
+}

@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+}
+
+.logo{
+    width: 10%;
+}
+
+.nav-item{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item a{
+    display: inline-block;
+    margin-left: 30px;
+    color: #000;
+}

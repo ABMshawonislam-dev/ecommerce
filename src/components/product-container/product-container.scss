@@ -1,0 +1,13 @@
+.product_container{
+    width: 19%;
+    height: 100px;
+    background: #000;
+    margin-top: 10px;
+    &:first-child{
+        width: 49%;
+    }
+    &:nth-child(2){
+        width: 49%;
+    }
+    
+}
