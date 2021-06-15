@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import { auth } from '../../firebase/firebase';
+import CartIcon from '../cart-icon/cart-icon';
+import CartDropdwon from '../cart-dropdown/cart-dropdown';
 import './header.scss';
 
 const Header = ({currentUser}) => (
@@ -26,8 +28,9 @@ const Header = ({currentUser}) => (
                         :
                         <Link to="/signup"> Sign UP </Link>
                 }
-                
+                <CartIcon/>
             </div>
+            <CartDropdwon/>
         </div>
     </div>
 )

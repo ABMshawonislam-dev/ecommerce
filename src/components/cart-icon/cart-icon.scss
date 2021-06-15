@@ -1,0 +1,13 @@
+.cart-icon{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    margin-left: 15px;
+    .item-count{
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        font-size: 13px;
+    }
+}
+
