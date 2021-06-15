@@ -6,7 +6,7 @@ import CartIcon from '../cart-icon/cart-icon';
 import CartDropdwon from '../cart-dropdown/cart-dropdown';
 import './header.scss';
 
-const Header = ({currentUser}) => (
+const Header = ({currentUser,hidden}) => (
     <div className="container">
         <div className="main">
             <div className="logo">
@@ -30,13 +30,14 @@ const Header = ({currentUser}) => (
                 }
                 <CartIcon/>
             </div>
-            <CartDropdwon/>
+            {hidden?null:<CartDropdwon/>}
         </div>
     </div>
 )
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
+const mapStateToProps = ({user: {currentUser},cart: {hidden}}) => ({
+    currentUser,
+    hidden
 })
 
 export default connect(mapStateToProps)(Header);
